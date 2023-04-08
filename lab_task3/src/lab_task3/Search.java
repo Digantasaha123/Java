@@ -22,7 +22,7 @@ public class Search
             array[i] = input.nextInt();
         }
 
-        for( int i = 0 ; i<n; i++)
+        for( int i = 0 ; i<t; i++)
         { System.out.print("Enter your Data to search : ");
             int key = input.nextInt();
            int res =  linearSearch(array, key);
