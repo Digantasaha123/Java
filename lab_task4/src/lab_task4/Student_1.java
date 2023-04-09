@@ -1,17 +1,18 @@
 package lab_task4;
+
 import java.util.Scanner;
 
 public class Student_1 {
     private String name;
     private int Id;
-    private double cgpa; 
+    private double cgpa;
 
-    public Student_1(String name, int Id, double cgpa)
-    {
+    public Student_1(String name, int Id, double cgpa) {
         this.name = name;
         this.Id = Id;
-        this.cgpa= cgpa;
+        this.cgpa = cgpa;
     }
+
     public String getName() {
         return name;
     }
@@ -35,38 +36,38 @@ public class Student_1 {
     public void setCgpa(double cgpa) {
         this.cgpa = cgpa;
     }
-    
-   public  void printInfo()
-    {
+
+    public void printInfo() {
         System.out.println("Name = " + this.name);
         System.out.println("ID = " + this.Id);
         System.out.println("CGPA = " + this.cgpa);
     }
-    
+
     public static void main(String[] args) {
-       Scanner input = new Scanner(System.in);
-       
+        Scanner input = new Scanner(System.in);
+
+        // Create first student
         System.out.println("Name of the first student ");
-        String n1 = input.nextLine();
+        String name1 = input.nextLine();
         System.out.println("Id of the first student ");
-        int Id1 = input.nextInt();
+        int id1 = input.nextInt();
         System.out.println("Cgpa of the first student ");
         double cgpa1 = input.nextDouble();
-         Student_1 s1 = new Student_1(n1, Id1, cgpa1);
+        Student_1 s1 = new Student_1(name1, id1, cgpa1);
         input.nextLine();
-         
-         System.out.println("Name of the second student ");
-        String n2 = input.nextLine();
+
+        // Create second student
+        System.out.println("Name of the second student ");
+        String name2 = input.nextLine();
         System.out.println("Id of the second student ");
-        int Id2 = input.nextInt();
+        int id2 = input.nextInt();
         System.out.println("Cgpa of the second student ");
         double cgpa2 = input.nextDouble();
-         Student_1 s2 = new Student_1(n2, Id2, cgpa2);
-        
-         s1.printInfo();
-         System.out.println(" \n");
-         s2.printInfo();
-        
+        Student_1 s2 = new Student_1(name2, id2, cgpa2);
+
+        // Print information for both students
+        s1.printInfo();
+        System.out.println();
+        s2.printInfo();
     }
-    
 }
