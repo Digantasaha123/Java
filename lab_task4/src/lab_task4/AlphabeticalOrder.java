@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-// hiiiiiiii
+
 public class AlphabeticalOrder {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
